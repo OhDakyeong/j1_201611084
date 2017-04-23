@@ -16,9 +16,7 @@ public class MomTurtle extends Turtle implements Observer {
   }
   
   public void update(Observable o, Object arg){
-    System.out.println("Count "+((Integer)arg).intValue());
     babyCurpos=((BabyTurtle)o).myCurpos;
-    System.out.println("current pos" + babyCurpos);
     moveTo(babyCurpos);
   }
 }

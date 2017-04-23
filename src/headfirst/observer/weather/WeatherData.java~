@@ -9,7 +9,7 @@ public class WeatherData implements Subject {
   private float pressure;
  
   public WeatherData() {
-    observers = new ArrayList<Observer>();
+    observers = new ArrayList();
   }
  
   public void registerObserver(Observer o) {
